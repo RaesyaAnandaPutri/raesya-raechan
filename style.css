@@ -1,0 +1,405 @@
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF5E4;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #850E35;
+}
+
+/* Logo styling */
+.logo a {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Courier', sans-serif;
+    color: #850E35;
+    text-decoration: none;
+}
+
+/* Menu styling */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: #850E35;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 20px; 
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling untuk tombol Order */
+.btn-order {
+    background-color: #ff9a9a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-order:hover {
+    background-color: #e07878; 
+}
+
+/* Styling untuk tombol Order */
+.btn-order {
+    background-color: #ff9a9a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-order:hover {
+    background-color: #e07878; 
+}
+
+section {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+/* Bagian Home */
+#Home {
+    padding: 50px 10%;
+    background-color: #ffffff; 
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kolom {
+    width: 45%;
+    padding-right: 20px;
+}
+
+.kolom h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 55px; 
+    margin-bottom: 20px;
+    color: #850E35;
+    line-height: 60px; 
+}
+
+.kolom p {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px; 
+    color: #333;
+    line-height: 1.8; 
+}
+
+.home-image {
+    width: 45%;
+}
+
+.home-image img {
+    width: 90%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsif untuk perangkat kecil */
+@media screen and (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kolom,
+    .home-image {
+        width: 100%; 
+    }
+
+    .home-image img {
+        width: 100%; 
+    }
+
+    .kolom h2 {
+        font-size: 50px; 
+    }
+
+    .kolom p {
+        font-size: 20px; 
+    }
+}
+
+#About {
+    padding: 50px 0;
+    background-color: #ffffff; 
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.kolom {
+    flex: 1;
+    max-width: 600px; 
+}
+
+.kolom h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #850E35;
+    margin-bottom: 20px;
+}
+
+.kolom p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+.kolom {
+    flex: 1;
+    max-width: 600px;
+}
+
+.kolom h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #850E35;
+}
+
+.kolom p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Product Section Styles */
+#Product {
+    background-color: #ffffff; 
+    padding: 50px 0;
+}
+
+.product-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-info h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #850E35;
+}
+
+.product-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-item {
+    width: 180px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item p {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #850E35;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-item {
+        width: 100%; 
+    }
+
+    .product-item img {
+        max-width: 100%; 
+    }
+}
+
+/* Order Section Styles */
+.order-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.order-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+}
+
+.order-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-order {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #850E35;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-order:hover {
+    background-color: #ff9a9a; 
+}
+
+@media screen and (max-width: 768px) {
+    .order-content {
+        padding: 15px;
+    }
+
+    .btn-order {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+#Contact {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 28px;
+    color: #850E35;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .keychain-cherry {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+    }
+
+    nav .menu ul li {
+        padding: 10px 0;
+    }
+}
